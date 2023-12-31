@@ -202,6 +202,7 @@ a {
 .text_cardf1 {
   font-size: 1.5em;
   font-family: "Montserrat-bold";
+  line-height: 2;
 }
 
 .icon {
@@ -213,7 +214,7 @@ a {
 
 /************************************************************** medias query ********************************************************/
 
-@media screen and (max-width: 375px) and (min-width: 350px) {
+@media screen and (max-width: 375px) and (min-width: 340px) {
   .imagemFundo {
     height: 40vh;
   }
@@ -251,12 +252,12 @@ a {
     margin-left: -10px;
   }
 
-  .DestaqueFinal {
-    font-size: 0.9em;
+  .container_DestaqueFinal .DestaqueFinal {
+    font-size: 1em;
     white-space: pre-line;
     color: #664a9f;
     margin-left: -3px;
-    max-width: 150px;
+    max-width: 190px;
   }
 
   .fundoRoxo-arredondado {
@@ -341,18 +342,18 @@ a {
   .textoPrincipal {
     margin-bottom: 10px;
     gap: 5px;
-    margin-left: 10px;
+    margin-left: 17px;
   }
 
-  .nossosServicos {
-    font-size: 0.8em;
+  .textoPrincipal .nossosServicos {
+    font-size: 1em;
   }
 
-  .oqueFazemos {
-    font-size: 1.4em;
+  .textoPrincipal .oqueFazemos {
+    font-size: 1.5em;
   }
 
-  .oqueFazemosDescrição {
+  .textoPrincipal .oqueFazemosDescrição {
     font-size: 1em;
     width: 50%;
   }
@@ -361,12 +362,12 @@ a {
     margin-left: -10px;
   }
 
-  .DestaqueFinal {
-    font-size: 1em;
+  .container_DestaqueFinal .DestaqueFinal {
+    font-size: 1.2em;
     white-space: pre-line;
     color: #664a9f;
-    margin-left: -3px;
-    max-width: 300px;
+    margin-left: 7px;
+    max-width: 200px;
   }
 
   .fundoRoxo-arredondado {
@@ -402,7 +403,7 @@ a {
 
   /* *************************** Cards Flutuantes *************************************** */
   .Container_cards_float {
-    top: 160px;
+    top: 180px;
     right: 0px;
     gap: 10px;
   }
@@ -423,7 +424,7 @@ a {
   }
 
   .container-texto p {
-    font-size: 0.5em;
+    font-size: 9px;
   }
 
   .icon {
@@ -433,31 +434,34 @@ a {
   }
 }
 
-@media (min-width: 600px) and (max-width: 767px) {
+@media (max-width: 600px) and (min-width: 400px) {
 
   /* ************************************************************************************************* Seção de Imgame ****************************************************************************************************** */
   .imagemFundo {
-    height: 60vh;
+    height: 40vh;
   }
 
-  .imagemLogo {
+  .logo.imagemLogo {
     width: 20%;
   }
 
+
   .textoPrincipal {
     margin-bottom: 20px;
+
   }
 
   .textoPrincipal .nossosServicos {
     font-size: 0.8em;
+    margin-top: -20%;
   }
 
   .textoPrincipal .oqueFazemos {
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
 
   .textoPrincipal .oqueFazemosDescrição {
-    font-size: 0.7em;
+    font-size: 1.2em;
     width: 50%;
   }
 
@@ -466,26 +470,26 @@ a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 20px;
+    margin-left: -10px;
   }
 
   .container_DestaqueFinal {
-    margin: 40px 0px 30px 20px;
+    margin: 20px 0px 20px 20px;
   }
 
   .container_DestaqueFinal .DestaqueFinal {
-    font-size: 0.7em;
+    font-size: 1em;
     white-space: pre-line;
     color: #664a9f;
   }
 
   .fundoRoxo-arredondado {
-    width: 180px;
-    height: 65px;
+    width: 170px;
+    height: 60px;
   }
 
   .text-card {
-    font-size: 0.7em;
+    font-size: 0.6em;
     margin: 0px 30px 0px 20px;
   }
 
@@ -495,7 +499,7 @@ a {
   }
 
   .text-cardGrande {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 0px 30px 0px 20px;
   }
 
@@ -509,15 +513,15 @@ a {
 
   /* ************************************ Cards Flutuantes ************************************************* */
   .Container_cards_float {
-    top: 32%;
-    right: 30px;
+    top: 21%;
+    right: 5px;
     margin: 10px;
-    gap: 30px;
+    gap: 10px;
   }
 
   .Card_Float {
     background-color: #664a9f;
-    width: 150px;
+    width: 140px;
     height: 90px;
     color: #fff;
     padding: 10px;
@@ -540,9 +544,10 @@ a {
     left: -10px;
     width: 5vh;
   }
+
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 600px) and (max-width: 768px) {
 
   /* ***************************** Seção de Imgame ******************************************* */
   .imagemFundo {
@@ -611,7 +616,7 @@ a {
   /* ******************************************** Cards Flutuantes *************************************** */
   .Container_cards_float {
     position: absolute;
-    top: 41%;
+    top: 45%;
     right: 50px;
     display: flex;
     flex-direction: column;
@@ -629,7 +634,7 @@ a {
 
   .container-texto {
     position: relative;
-    top: -35px;
+    top: -45px;
     left: 5px;
   }
 
@@ -643,6 +648,8 @@ a {
     left: -15px;
     width: 10vh;
   }
+
+
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
